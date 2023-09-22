@@ -58,10 +58,5 @@ document.querySelector('footer').appendChild(aboutLink);
 aboutLink.addEventListener('click', () => {
   window.open(aboutLink.href, '');
 });
-const script = require('./script.js');
 
-// Use the script.js file
-const result = script.myFunction();
-
-console.log(result);
 
