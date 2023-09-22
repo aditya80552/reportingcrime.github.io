@@ -99,11 +99,13 @@ button {
 
 .footer-item {
   margin-bottom: 0px;
+color: white;
 }
 
 .footer-item h3 {
   font-size: 20px;
   margin-bottom: 5px;
+color: white;
 }
 
 .footer-social-icons {
