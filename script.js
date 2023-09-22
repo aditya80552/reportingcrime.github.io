@@ -9,7 +9,7 @@ form.addEventListener('submit1.html', async (event) => {
 const department = form.querySelector('input[name="department"]').value;
 const description = form.querySelector('input[name="description"]').value;
   
-  const response = await fetch('submit1.html', {
+  const response = await fetch('/report', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
