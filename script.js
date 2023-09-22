@@ -1,6 +1,6 @@
 const form = document.querySelector('form');
 
-form.addEventListener('submit1.html', async (event) => {
+form.addEventListener('submit', async (event) => {
   event.preventDefault();
 
   const name = form.querySelector('input[name="name"]').value;
