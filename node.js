@@ -12,8 +12,8 @@ const crimeSchema = new mongoose.Schema({
   name: String,
   email: String,
   crime: String,
- description: String,
- department: String
+department: String ,
+ description: String
 
 });
 
@@ -24,8 +24,8 @@ app.post('/report', async (req, res) => {
     name: req.body.name,
     email: req.body.email,
     crime: req.body.crime,
-    description: req.body.description,
-    department: req.body.department
+     department: req.body.department,
+    description: req.body.description
   });
 
   await crime.save();
