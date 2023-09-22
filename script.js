@@ -34,7 +34,7 @@ supportLink.addEventListener('click', () => {
 
 const contactLink = document.createElement('a');
 contactLink.href = '/contact';
-supportLink.textContent = '';
+contactLink.textContent = '';
 
 document.querySelector('footer').appendChild(contactLink);
 
@@ -43,9 +43,8 @@ contactLink.addEventListener('click', () => {
 });
 
 const aboutLink = document.createElement('a');
-aboutLink.href = '/successful';
-abouttLink.textContent = 'successful';
-
+aboutLink.href = 'successful.html';
+aboutLink.textContent = '';
 document.querySelector('footer').appendChild(aboutLink);
 
 aboutLink.addEventListener('click', () => {
