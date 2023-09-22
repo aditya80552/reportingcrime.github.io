@@ -22,24 +22,35 @@ const description = form.querySelector('input[name="description"]').value;
       description
     })
   });
-const footer = document.querySelector('footer');
+const supportLink = document.createElement('a');
+supportLink.href = '/support';
+supportLink.textContent = 'Support';
 
-const aboutUsLink = footer.querySelector('.footer-item a[href="/about-us"]');
-const supportLink = footer.querySelector('.footer-item a[href="/support"]');
-const successfulLink = footer.querySelector('.footer-item a[href="/successful"]');
-
-aboutUsLink.addEventListener('click', () => {
-  // Handle about us link click
-});
+document.querySelector('footer').appendChild(supportLink);
 
 supportLink.addEventListener('click', () => {
-  // Handle support link click
+  window.open(supportLink.href, '');
 });
 
-successfulLink.addEventListener('click', () => {
-  // Handle successful link click
+const contactLink = document.createElement('a');
+contactLink.href = '/contact';
+supportLink.textContent = '';
+
+document.querySelector('footer').appendChild(contactLink);
+
+contactLink.addEventListener('click', () => {
+  window.open(contactLink.href, '');
 });
 
+const aboutLink = document.createElement('a');
+aboutLink.href = '/successful';
+abouttLink.textContent = 'successful';
+
+document.querySelector('footer').appendChild(aboutLink);
+
+aboutLink.addEventListener('click', () => {
+  window.open(aboutLink.href, '');
+});
   if (response.ok) {
     alert('Crime reported successfully!');
   } else {
