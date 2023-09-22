@@ -99,10 +99,33 @@ button {
 .footer a:hover {
   color: #ccc;
 }
-
-.footer .support,
-.footer .about,
-.footer .contact {
-  display: inline-block;
-  padding: 0 10px;
+.footer {
+  background-color: #000;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
 }
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer-item {
+  margin-bottom: 10px;
+}
+
+.footer-item h3 {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.footer-item a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-item a:hover {
+  color: #ccc;
+}
+
