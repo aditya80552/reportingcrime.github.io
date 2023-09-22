@@ -12,7 +12,7 @@ const crimeSchema = new mongoose.Schema({
   name: String,
   email: String,
   crime: String,
-department: String ,
+department: String,
  description: String
 
 });
