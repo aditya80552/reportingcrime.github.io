@@ -86,7 +86,7 @@ button {
 }
 .footer {
   background-color: #333;
-  color: #fff;
+  color: white;
   padding: 20px;
   text-align: center;
 }
@@ -98,7 +98,7 @@ button {
 
 
 .footer-item {
-  margin-bottom: 10px;
+  margin-bottom: 0px;
 }
 
 .footer-item h3 {
