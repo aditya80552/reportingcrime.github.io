@@ -96,6 +96,7 @@ button {
   justify-content: space-around;
 }
 
+
 .footer-item {
   margin-bottom: 10px;
 }
@@ -103,15 +104,6 @@ button {
 .footer-item h3 {
   font-size: 20px;
   margin-bottom: 5px;
-}
-
-.footer-item a {
-  color: #fff;
-  text-decoration: none;
-}
-
-.footer-item a:hover {
-  color: #ccc;
 }
 
 .footer-social-icons {
@@ -127,4 +119,8 @@ button {
 
 .footer-social-icon:hover {
   color: #ccc;
+}
+.footer-social-icons {
+  justify-content: center;
+  align-items: center;
 }
