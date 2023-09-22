@@ -1,6 +1,6 @@
 const form = document.querySelector('form');
 
-form.addEventListener('submit', async (event) => {
+form.addEventListener('submit1.html', async (event) => {
   event.preventDefault();
 
   const name = form.querySelector('input[name="name"]').value;
@@ -9,7 +9,7 @@ form.addEventListener('submit', async (event) => {
 const department = form.querySelector('input[name="department"]').value;
 const description = form.querySelector('input[name="description"]').value;
   
-  const response = await fetch('/report', {
+  const response = await fetch('submit1.html', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
