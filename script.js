@@ -22,6 +22,23 @@ const description = form.querySelector('input[name="description"]').value;
       description
     })
   });
+const footer = document.querySelector('footer');
+
+const aboutUsLink = footer.querySelector('.footer-item a[href="/about-us"]');
+const supportLink = footer.querySelector('.footer-item a[href="/support"]');
+const successfulLink = footer.querySelector('.footer-item a[href="/successful"]');
+
+aboutUsLink.addEventListener('click', () => {
+  // Handle about us link click
+});
+
+supportLink.addEventListener('click', () => {
+  // Handle support link click
+});
+
+successfulLink.addEventListener('click', () => {
+  // Handle successful link click
+});
 
   if (response.ok) {
     alert('Crime reported successfully!');
