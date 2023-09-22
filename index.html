@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Women Crime Reporting</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Women Crime Reporting</h1>
+
+  <form action="/report" method="post">
+    <input type="text" name="name" placeholder="Name">
+    <input type="email" name="email" placeholder="Email">
+  <label for="department">Department:</label>
+            <select id="department" name="department">
+                <option value="Computer Science">Computer Science</option>
+                <option value="Electrical Engineering">Electronics Engineering</option>
+ <option value="Electrical Engineering">Electrical Engineering</option>
+ <option value="Electrical Engineering">Civil Engineering</option>
+                <option value="Mechanical Engineering">Mechanical Engineering</option>
+                <!-- Add more department options as needed -->
+            </select> <br>
+    
+    
+    <input type="text" name="crime" placeholder="Crime">
+            <label for="description">Description of Incident:</label>
+            <textarea id="description" name="description" rows="4" required></textarea><br>
+
+    <input type="submit" value="Report">
+  </form>
+</body>
+</html>
