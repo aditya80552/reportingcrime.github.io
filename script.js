@@ -1,22 +1,31 @@
-const express = require('express');
-const bodyParser = require('body-parser');
+const form = document.querySelector('form');
 
-const app = express();
+form.addEventListener('submit', async (event) => {
+  event.preventDefault();
 
-app.use(bodyParser.json());
+  const name = form.querySelector('input[name="name"]').value;
+  const email = form.querySelector('input[name="email"]').value;
+  const crime = form.querySelector('input[name="crime"]').value;
+const department = form.querySelector('input[name="department"]').value;
+const description = form.querySelector('input[name="description"]').value;
 
-app.post('/report', async (req, res) => {
-  const crime = new Crime({
-    name: req.body.name,
-    email: req.body.email,
-    crime: req.body.crime
+  const response = await fetch('/report', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({
+      name,
+      email,
+      crime,
+      department,
+      description
+    })
   });
 
-  await crime.save();
-
-  res.send('Crime reported successfully!');
-});
-
-app.listen(3000, () => {
-  console.log('Server is listening on port 3000');
+  if (response.ok) {
+    alert('Crime reported successfully!');
+  } else {
+    alert('Error reporting crime!');
+  }
 });
