@@ -29,20 +29,33 @@ const description = form.querySelector('input[name="description"]').value;
     alert('Error reporting crime!');
   }
 });
-const footer = document.querySelector('footer');
+const supportLink = document.createElement('a');
+supportLink.href = '/support';
+supportLink.textContent = 'Support';
 
-const supportLink = footer.querySelector('.support a');
-const aboutLink = footer.querySelector('.about a');
-const contactLink = footer.querySelector('.contact a');
+document.querySelector('footer').appendChild(supportLink);
 
 supportLink.addEventListener('click', () => {
-  
+  window.open(supportLink.href, '');
 });
 
-aboutLink.addEventListener('click', () => {
-  // Handle about link click
-});
+const contactLink = document.createElement('a');
+contactLink.href = '/contact';
+supportLink.textContent = '';
+
+document.querySelector('footer').appendChild(contactLink);
 
 contactLink.addEventListener('click', () => {
-  // Handle contact link click
+  window.open(contactLink.href, '');
 });
+
+const aboutLink = document.createElement('a');
+aboutLink.href = '/about';
+abouttLink.textContent = '';
+
+document.querySelector('footer').appendChild(aboutLink);
+
+aboutLink.addEventListener('click', () => {
+  window.open(aboutLink.href, '');
+});
+
