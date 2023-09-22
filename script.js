@@ -29,3 +29,20 @@ const description = form.querySelector('input[name="description"]').value;
     alert('Error reporting crime!');
   }
 });
+const footer = document.querySelector('footer');
+
+const supportLink = footer.querySelector('.support a');
+const aboutLink = footer.querySelector('.about a');
+const contactLink = footer.querySelector('.contact a');
+
+supportLink.addEventListener('click', () => {
+  
+});
+
+aboutLink.addEventListener('click', () => {
+  // Handle about link click
+});
+
+contactLink.addEventListener('click', () => {
+  // Handle contact link click
+});
